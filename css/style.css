@@ -6,8 +6,45 @@
 @import url("tablet.css");
 @import url("mobile.css");
 
+.owl-dots {
+   text-align: center;
+   position: fixed;
+   bottom: 5px;
+   width: 100%;
+   -webkit-backface-visibility: hidden;
+   -moz-backface-visibility: hidden;
+   -ms-backface-visibility: hidden;
+   backface-visibility: hidden;
+}
+.row{
+  display: flex;
+  margin: 0 auto;
+  width: 1200px;
+}
+.rowx{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
 
+.owl-dot {
+   border-radius: 50px;
+   height: 10px;
+   width: 10px;
+   display: inline-block;
+   background: rgba(127,127,127, 0.5);
+   margin-left: 5px;
+   margin-right: 5px;
+}
 
+.owl-dot.active {
+   background: rgba(127,127,127, 1);
+}
+
+body{
+  min-width: 1200px;
+}
 /* Шапка */
 .wrapperHead{
   height: 100vh;
@@ -132,6 +169,80 @@
 }
 
 
+/* Показы */
+  .sectionScreenings{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0px;
+  }
+  .sectionScreeningsImage{
+    display: inline-block;
+    width: 560px;
+    height: 808px;
+    background-size: cover;
+    margin-left: 50px;
+  }
+  #sonMu{
+    background-image: url(../img/sonMu.jpg);
+  }
+  #doneck{
+    background-image: url(../img/doneck.jpg);
+  }
+  #work{
+    background-image: url(../img/work.jpg);
+  }
+  #after{
+    font-size: 18px;
+    font-weight: 500;
+  }
+  #after a{
+    color: #ff8562;
+    text-decoration: none;
+  }
+  #perm{
+    background-image: url(../img/perm.jpg);
+  }
+  #tears{
+    background-image: url(../img/tears.jpg);
+  }
+  #dreamers{
+    background-image: url(../img/dreamers.jpg);
+  }
+  #war{
+    background-image: url(../img/war.jpg);
+  }
+  #power{
+    background-image: url(../img/power.jpg);
+  }
+  .screeningsText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 360px;
+  }
+  .screeningsText h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.55;
+    margin-bottom: 30px;
+  }
+  .screeningsText p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.55;
+    margin-bottom: 60px;
+  }
+  .wrapperPhotos{
+    width: 100vw;
+    padding: 50px 0;
+    background-color: #171717;
+  }
+
+
+
 /* Отзывы о Опии */
 .wrapperComments{
   padding-top: 80px;
@@ -192,7 +303,7 @@
 
 /*  Футер */
 .wrapperFooter{
-  padding: 50px 0;
+  padding-top: 50px;
 }
 .sectionFooter{
   flex-direction: column;
